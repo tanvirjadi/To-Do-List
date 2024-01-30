@@ -136,7 +136,7 @@
         $(document).on("change", ".complete", function () {
         if ($(this).is(":checked")) {
             $(this).siblings(".to-do").css("textDecoration", "line-through");
-            alert(pw[Math.floor(Math.random() * pw.length)]);
+            alert("Task Completed!" + pw[Math.floor(Math.random() * pw.length)]);
         } else {
             $(this).siblings(".to-do").css("textDecoration", "none");
         }
